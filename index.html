@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Endangered Watch</title>
+  <!--Ionic-->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+  <link rel="stylesheet" href="./dark.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+    <ion-app>
+      
+      <ion-tabs>
+        <ion-tab tab="music">
+
+
+        </ion-tab>
+
+        <ion-tab tab="discover">
+          <ion-header translucent>   
+            <ion-title style="color: white;" class="title">
+              <ion-icon name="globe-outline" style="color: #32d74b;"></ion-icon>Wild Watch
+            </ion-title>
+            <ion-title style="color: #646565; font-size: 20px; padding-left: 30px; top: -45px;" class="title" id="date">
+              Date
+            </ion-title>
+          </ion-header>
+
+          <div class="line"></div>
+          
+          <!--<div class="map"></div>-->
+        </ion-tab>
+
+        <ion-tab tab="search">
+          <ion-searchbar animated="True" autocorrect="on"></ion-searchbar>
+          <div class="recentlySearched">
+            <ion-label style="color: white;">Recently Searched</ion-label>
+            <ion-label color="primary" style="position: relative; right: 0px;">Clear</ion-label>
+          </div>
+          
+        </ion-tab>
+
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button tab="music">
+            <ion-label class="tabLabels">Watchlist</ion-label>
+            <ion-icon name="bookmark-outline"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="discover">
+            <ion-label class="tabLabels">Discover</ion-label>
+            <ion-icon name="planet-outline"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="search">
+            <ion-label class="tabLabels">Search</ion-label>
+            <ion-icon name="search-outline"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-app>
+  </body>
+  <!-- partial -->
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
